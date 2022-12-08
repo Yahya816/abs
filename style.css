@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Google Sans Regular";
+  box-sizing: border-box;
+}
+body {
+  background: #fefefe;
+
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  color: white;
+  margin: 0;
+}
+.logo {
+  color: white;
+  font-size: 40px;
+  font-family: 'Cinzel', serif;
+  font-weight: 200;
+  text-shadow: 1px 1px 4px white , 0 0 5px black;
+
+}
+.hamburger {
+  display: none;
+}
+.nav-bar ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav-bar ul li a {
+  display: block;
+  color: #fefefe;
+  font-size: 20px;
+  padding: 10px 25px;
+  border-radius: 50px;
+  transition: 0.3s;
+  margin: 0 5px;
+}
+.nav-bar ul li a:hover {
+  color: black;
+  background: #fefefe;
+  font-size : 25px;
+}
+.nav-bar ul li a.active {
+  color: black;
+  background: #fefefe;
+  font-size : 25px ;
+}
+
+@media only screen and (max-width : 1320px) {
+  header {
+    padding: 0 50px;
+
+  }
+}
+
+@media only screen and (max-width : 1120px) {
+  header {
+    padding: 0 30px;
+
+  }
+}
